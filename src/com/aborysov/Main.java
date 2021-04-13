@@ -1,8 +1,18 @@
 package com.aborysov;
 
+import com.aborysov.converters.IStudentStringConverter;
+import com.aborysov.converters.JsonStudentStringConverter;
+
 public class Main {
 
     public static void main(String[] args) {
+
+        IStudentStringConverter jsonConverter;
+
+        jsonConverter = new JsonStudentStringConverter();
+        String json = jsonConverter.convert(new Student("Вася"));
+        System.out.println(json);
+
         String string1 = "100";
         String string2 = "100";
         String string3 = "100500";
