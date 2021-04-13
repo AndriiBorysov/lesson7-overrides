@@ -1,9 +1,9 @@
 package com.aborysov.interfaces;
 
-public class OakTree implements IGrowable {
+public class Human implements IGrowable {
     @Override
     public void grow() {
-        System.out.println("oak...");
+        System.out.println(">:)");
     }
 
     @Override

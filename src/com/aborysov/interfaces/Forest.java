@@ -9,6 +9,7 @@ public class Forest implements IGrowable {
 
     @Override
     public void grow() {
+        System.out.println("This is a forest:");
         for (int i = 0; i < growables.length; i++) {
             IGrowable growable = growables[i];
             growable.grow();

@@ -8,6 +8,10 @@ public class Groot implements IGrowable {
 
     @Override
     public boolean canGrowFurther() {
-        return false;
+        return true;
+    }
+
+    public void saySomething() {
+        System.out.println("Я есть Грут");
     }
 }
